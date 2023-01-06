@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  font-family: Quicksand;
+  display: flex;
+}
+
+.navbar {
+  margin-left: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+}
+
+main {
+  width: 1400px;
+  box-sizing: border-box;
+  padding: 30px 20px 0 50px;
+}
+
+main h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.main-tambah {
+  display: flex;
+}
+
+.form-input-data {
+  margin-top: 20px;
+  display: flex;
+}
+
+.form-input-data table tr {
+  padding-bottom: 50px;
+}
+
+.form-input-data td {
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+}
+
+.form-input-data input,
+select,
+textarea {
+  margin-left: 40px;
+}
+
+input {
+  border-radius: 5px;
+  width: 350px;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  font-family: Quicksand;
+  font-size: 18px;
+}
+
+textarea {
+  width: 350px;
+  height: 150px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: -15px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: Quicksand;
+}
+
+select {
+  width: 350px;
+  padding: 8px 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Quicksand;
+  font-size: 18px;
+}
+
+.input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+}
+
+.submit-button {
+  margin-left: 30px;
+}
+
+.search {
+  margin-top: 40px;
+  display: flex;
+}
+
+.searchTerm {
+  width: 300px;
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 33px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #000000;
+}
+
+.searchButton {
+  margin-left: -5px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #000000;
+  background: #000000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.list-product {
+  width: 95%;
+  margin-top: 25px;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.list-product table {
+  width: 100%;
+  text-align: center;
+}
+
+.list-product img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.list-product th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.list-product th {
+  font-size: 22px;
+  background-color: #000000;
+  color: white;
+}
+
+.list-product td {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list-product a {
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  box-sizing: border-box;
+  width: 400px;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  min-height: 100vh;
+}
+
+aside i {
+  margin-left: 20px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-info img {
+  border-radius: 100%;
+  border: 6px solid white;
+  margin-top: 30px;
+}
+
+.user-info #profile-nama {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.user-info #profile-role {
+  margin-top: -15px;
+}
+
+.aside-menu {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.aside-menu .menu {
+  box-sizing: border-box;
+  padding: 19px 0;
+  background-color: rgb(15, 15, 15);
+  margin-bottom: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.aside-menu .logout {
+  background-color: white;
+  color: black;
+}
+
+.aside-menu .menu:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+.aside-menu .menu a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.ubah-judul {
+  display: flex;
+  align-items: center;
+}
+
+.ubah-judul img {
+  margin-left: 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+/* Daftar Pesanan */
+.main-pesanan {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+}
+
+#username {
+  margin: 0;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.detail-pesanan {
+  width: 48%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px 20px;
+  border-radius: 9px;
+  margin-top: 20px;
+}
+
+.id-pesanan {
+  background-color: #fea116;
+  color: white;
+  width: fit-content;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.nama-pesanan {
+  display: flex;
+  justify-items: left;
+}
+
+.nama-pesanan p {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#status-produk {
+  color: green;
+  font-weight: bold;
+}
+
+/* END Daftar Pesanan */
+
+/* Button */
+.submit-button {
+  appearance: none;
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.submit-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.submit-button:hover {
+  background-color: #ffffff;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.submit-button:disabled {
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959da5;
+  cursor: default;
+}
+
+.submit-button:active {
+  background-color: #edeff2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.submit-button:focus {
+  outline: 1px transparent;
+}
+
+.submit-button:before {
+  display: none;
+}
+
+.submit-button:-webkit-details-marker {
+  display: none;
+}
+
+/* Upload */
+.file-upload {
+  background-color: #ffffff;
+  width: 350px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #6b6b6b;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid black;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #000000;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #757575;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #bababa;
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #040404;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+/* pagination */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid rgb(112, 112, 112);
+  padding: 5px 10px;
+}
+
+/* Status Page */
+.status-page {
+  margin-top: 40px;
+}
+
+.status-page a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: bold;
+  border: 1px solid #b7b7b7;
+  border-bottom: none;
+  padding: 6px 10px;
+  margin: 0;
+}
